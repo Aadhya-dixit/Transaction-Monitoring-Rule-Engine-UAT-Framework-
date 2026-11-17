@@ -1,0 +1,50 @@
+{
+  "contamination": 0.02,
+  "features": [
+    "amount",
+    "hour",
+    "is_new_beneficiary",
+    "failed",
+    "txns_1h"
+  ],
+  "rows": 10000,
+  "rule_alerts": 279,
+  "ml_alerts": 200,
+  "both": 136,
+  "rules_only": 143,
+  "ml_only": 64,
+  "fraud_txns": 197,
+  "fraud_cases": 127,
+  "rules_fraud_txn": 133,
+  "ml_fraud_txn": 105,
+  "both_fraud_txn": 82,
+  "ml_only_fraud_txn": 23,
+  "rules_only_fraud_txn": 51,
+  "rules_cases": 127,
+  "rules_case_recall_pct": 100.0,
+  "ml_cases": 83,
+  "ml_case_recall_pct": 65.4,
+  "sensitivity": [
+    {
+      "contamination": 0.02,
+      "alerts": 200,
+      "fraud_txn": 105,
+      "case_recall_pct": 65.4,
+      "cases": 83
+    },
+    {
+      "contamination": 0.05,
+      "alerts": 500,
+      "fraud_txn": 149,
+      "case_recall_pct": 85.8,
+      "cases": 109
+    },
+    {
+      "contamination": 0.1,
+      "alerts": 1000,
+      "fraud_txn": 170,
+      "case_recall_pct": 92.9,
+      "cases": 118
+    }
+  ]
+}

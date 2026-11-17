@@ -1,0 +1,90 @@
+{
+  "rules": [
+    {
+      "rule_id": "R01",
+      "name": "High amount to new beneficiary",
+      "type": "high_amount_new_beneficiary",
+      "params": {
+        "amount_threshold": 35000
+      },
+      "severity": "high",
+      "enabled": true
+    },
+    {
+      "rule_id": "R02",
+      "name": "Transaction velocity",
+      "type": "velocity",
+      "params": {
+        "max_txns": 5,
+        "window_minutes": 10
+      },
+      "severity": "medium",
+      "enabled": true
+    },
+    {
+      "rule_id": "R03",
+      "name": "Odd-hour high amount",
+      "type": "odd_hour_high_amount",
+      "params": {
+        "start_hour": 1,
+        "end_hour": 5,
+        "amount_threshold": 12000
+      },
+      "severity": "medium",
+      "enabled": true
+    },
+    {
+      "rule_id": "R04",
+      "name": "Failed attempts then success",
+      "type": "failed_then_success",
+      "params": {
+        "min_failures": 3,
+        "window_minutes": 30
+      },
+      "severity": "high",
+      "enabled": true
+    },
+    {
+      "rule_id": "R05",
+      "name": "Structuring below reporting limit",
+      "type": "structuring",
+      "params": {
+        "lower": 45000,
+        "upper": 50000
+      },
+      "severity": "high",
+      "enabled": true
+    },
+    {
+      "rule_id": "R06",
+      "name": "Device change with high amount",
+      "type": "device_change_high_amount",
+      "params": {
+        "amount_threshold": 25000
+      },
+      "severity": "medium",
+      "enabled": true
+    },
+    {
+      "rule_id": "R07",
+      "name": "Location change within window",
+      "type": "location_change",
+      "params": {
+        "window_minutes": 30
+      },
+      "severity": "high",
+      "enabled": true
+    },
+    {
+      "rule_id": "R08",
+      "name": "Repeated transfers to same beneficiary",
+      "type": "repeat_beneficiary",
+      "params": {
+        "max_txns": 3,
+        "window_minutes": 60
+      },
+      "severity": "medium",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+test_id,rule,scenario,description,expected,actual,result
+UAT-R01-01,R01,positive,"30,000 to new beneficiary",True,True,PASS
+UAT-R01-02,R01,negative,"30,000 to known beneficiary",False,False,PASS
+UAT-R01-03,R01,boundary,"exactly 25,000 to new beneficiary",False,False,PASS
+UAT-R02-01,R02,positive,6 txns in 5 minutes,True,True,PASS
+UAT-R02-02,R02,negative,3 txns in 3 minutes,False,False,PASS
+UAT-R02-03,R02,boundary,exactly 5 txns in 5 minutes,False,False,PASS
+UAT-R03-01,R03,positive,"15,000 at 02:30",True,True,PASS
+UAT-R03-02,R03,negative,"15,000 at 12:00",False,False,PASS
+UAT-R03-03,R03,boundary,"exactly 10,000 at 02:30",False,False,PASS
+UAT-R04-01,R04,positive,3 failures then success,True,True,PASS
+UAT-R04-02,R04,negative,1 failure then success,False,False,PASS
+UAT-R04-03,R04,boundary,2 failures then success,False,False,PASS
+UAT-R05-01,R05,positive,"49,000 amount",True,True,PASS
+UAT-R05-02,R05,negative,"20,000 amount",False,False,PASS
+UAT-R05-03,R05,boundary,"exactly 50,000",False,False,PASS
+UAT-R06-01,R06,positive,"new device, 30,000",True,True,PASS
+UAT-R06-02,R06,negative,"same device, 30,000",False,False,PASS
+UAT-R06-03,R06,boundary,"new device, exactly 20,000",False,False,PASS
+UAT-R07-01,R07,positive,Mumbai then Delhi after 10 min,True,True,PASS
+UAT-R07-02,R07,negative,Mumbai then Delhi after 2 hours,False,False,PASS
+UAT-R07-03,R07,boundary,Delhi exactly 30 min later,True,True,PASS
+UAT-R08-01,R08,positive,4 transfers to same beneficiary in 30 min,True,True,PASS
+UAT-R08-02,R08,negative,2 transfers,False,False,PASS
+UAT-R08-03,R08,boundary,exactly 3 transfers,False,False,PASS

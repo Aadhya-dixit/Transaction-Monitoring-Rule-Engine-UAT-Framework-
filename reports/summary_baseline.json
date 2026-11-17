@@ -1,0 +1,14 @@
+{
+  "path": "rules/rules.json",
+  "alerts": 279,
+  "fraud_txns": 197,
+  "fraud_caught_txn": 133,
+  "recall_txn_pct": 67.5,
+  "fraud_cases": 127,
+  "fraud_cases_caught": 127,
+  "recall_case_pct": 100.0,
+  "false_pos": 146,
+  "precision_pct": 47.7,
+  "fp_rate_pct": 1.489,
+  "rules_evaluated": 8
+}
